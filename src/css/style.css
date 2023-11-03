@@ -1,0 +1,187 @@
+/* -------------------------------------------- */
+/* Creates the layout for the machine */
+/* -------------------------------------------- */
+#outer-box {
+  background-color: lightgrey;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+#inner-box {
+  display: block;
+  width: 90%;
+  max-width: 1000px;
+}
+
+#square {
+  position: relative;
+  text-align: center;
+}
+
+#square::after {
+  content: "";
+  display: block;
+  padding-bottom: 63.8%;
+
+  margin-bottom: 20px;
+}
+/* -------------------------------------------- */
+
+
+#machine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('/background_with_machine.png');
+  background-size: 100% 100%;
+}
+
+/* -------------------------------------------- */
+/* Buttons */
+/* -------------------------------------------- */
+#left, #right {
+  width: 11%;
+  padding-top: 11%;
+  position: absolute;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url('/button-up.png');
+  border: none;
+}
+
+#left {
+  top: 62.7%;
+  left: 6.2%;
+}
+
+#right {
+  top: 62.7%;
+  left: 83.8%;
+}
+
+#left.down, #right.down {
+  background-image: url('/button-down.png');
+}
+
+#start {
+  width: 7.3%;
+  padding-top: 4.8%;
+  top: 9.6%;
+  left: 83.4%;
+  position: absolute;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url('/small-button-up.png');
+  border: none;
+}
+
+#start.down {
+  background-image: url('/small-button-down.png');
+}
+
+
+/* -------------------------------------------- */
+/* score */
+/* -------------------------------------------- */
+@font-face {
+  font-family: digitalNumbers;
+  src: url(digitalnumbers-regular.ttf);
+}
+#score {
+  font-family: digitalNumbers;
+  position: absolute;
+  top: 25%;
+  left: 61%;
+  font-size: 2.5vw;
+  text-align: right;
+  width: 11.5%;
+  overflow: hidden;
+}
+
+/* -------------------------------------------- */
+/* jumping men sprites */
+/* -------------------------------------------- */
+.jumper {
+  width: 3.2%;
+  padding-top: 3.2%;
+  background-size: 100% 100%;
+  position: absolute;
+  filter: opacity(20%);
+}
+
+.jumper.active {
+  filter: opacity(100%) drop-shadow(4px 4px 2px grey);
+}
+
+/* -------------------------------------------- */
+/* firefighter sprites */
+/* -------------------------------------------- */
+.firemen {
+  width: 10%;
+  padding-top: 6%;
+  background-size: 100% 100%;
+  position: absolute;
+  filter: opacity(20%);
+}
+
+.firemen.active {
+  filter: opacity(100%) drop-shadow(4px 4px 2px grey);
+}
+
+#firefighters-1 {
+  top: 58.7%;
+  left: 31%;
+  background-image: url('/sprites/firefighters-1.png');
+}
+
+#firefighters-2 {
+  top: 58.7%;
+  left: 43.3%;
+  background-image: url('/sprites/firefighters-3.png');
+}
+
+#firefighters-3 {
+  top: 58.7%;
+  left: 54.7%;
+  background-image: url('/sprites/firefighters-2.png');
+}
+
+/* -------------------------------------------- */
+/* crash sprites */
+/* -------------------------------------------- */
+.crash {
+  width: 10%;
+  padding-top: 3.5%;
+  background-size: 100% 100%;
+  position: absolute;
+  filter: opacity(20%);
+}
+
+.crash.active {
+  filter: opacity(100%) drop-shadow(4px 4px 2px grey);
+}
+
+#crash-1 {
+  top: 67.1%;
+  left: 31.3%;
+  background-image: url('/sprites/crash-1.png');
+}
+
+#crash-2 {
+  top: 66.7%;
+  left: 43%;
+  background-image: url('/sprites/crash-2.png');
+}
+
+#crash-3 {
+  top: 66.5%;
+  left: 54%;
+  background-image: url('/sprites/crash-3.png');
+}
+
+
