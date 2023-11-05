@@ -1,8 +1,10 @@
+body {
+  background-color: lightgrey;
+}
 /* -------------------------------------------- */
 /* Creates the layout for the machine */
 /* -------------------------------------------- */
 #outer-box {
-  background-color: lightgrey;
   padding-top: 5vh;
   padding-bottom: 10vh;
   display: flex;
@@ -97,7 +99,7 @@
   position: absolute;
   top: 25%;
   left: 61%;
-  font-size: 2.5vw;
+  font-size: min(2.5vw, 30px);
   text-align: right;
   width: 11.5%;
   overflow: hidden;
